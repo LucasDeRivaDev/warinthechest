@@ -1,0 +1,39 @@
+/* ============================================================
+   APP.CSS — War in the Chest
+   Estilos globales y contenedores principales.
+   ============================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0a0806;
+}
+
+.app-root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* El div donde Phaser inyecta su canvas */
+.phaser-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* El canvas de Phaser */
+.phaser-container canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
